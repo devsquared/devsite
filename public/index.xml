@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Devin Ward | Software Developer on Devin Ward | Software Developer</title>
+        <link>https://devsquared.space/</link>
+        <description>Recent content in Devin Ward | Software Developer on Devin Ward | Software Developer</description>
+        <generator>Hugo -- gohugo.io</generator>
+        
+            <language>en</language>
+        
+        
+        
+            <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+        
+        
+            <lastBuildDate>Sat, 01 Feb 2020 12:41:59 -0600</lastBuildDate>
+        
+        <atom:link href="https://devsquared.space/" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>Posts</title>
+                <link>https://devsquared.space/posts/</link>
+                <pubDate>Sat, 01 Feb 2020 12:41:59 -0600</pubDate>
+                
+                <guid>https://devsquared.space/posts/</guid>
+                <description></description>
+            </item>
+        
+    </channel>
+</rss>
