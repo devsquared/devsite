@@ -62,14 +62,14 @@ unsafe = true
 
 [params]
   version = "5.x"                                        # LoveIt theme version
-  description = "LoveIt Theme Demo"                      # site description
-  keywords = ["XXXX", "Theme", "Hugo"]                   # site keywords
+  description = "Devin Ward's Blog!"                     # site description
+  keywords = ["Devin", "Ward", "Tech"]                   # site keywords
 
                                                       #### Home Page Info
   home_mode = "post"                                     # [post, other] home mode
   home_paginate = 6                                      # special amount of posts in each home post page
   avatar = "images/avatar.png"                           # URL of avatar shown in home page
-  subtitle = "dream, design, create"  # subtitle shown in home page
+  subtitle = "Hello World!"                              # subtitle shown in home page
 
   socialShare = true                                     # whether to show social share links in post page
 
@@ -114,9 +114,9 @@ unsafe = true
     email = "devissquared@gmail.com"
 
   [params.social]                                        # Social Info in home page
-    GitHub = "https://github.com/devsquared"
-    Linkedin = "https://www.linkedin.com/in/devinmward/"
-    Twitter = "https://twitter.com/devissquared"
+    GitHub = "devsquared"
+    Linkedin = "devinmward/"
+    Twitter = "devissquared"
     #Email = "devissquared@gmail.com"
 
   [params.share]                                         # Social Share Links in post page
