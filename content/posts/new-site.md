@@ -1,7 +1,7 @@
 ---
 title: "New Site!"
-date: {{ .Date }}
-lastmod: {{ .Date }}
+date: 2020-02-02T11:04:49+08:00
+lastmod: 2020-02-02T11:04:49+08:00
 draft: false
 description: "First post"
 show_in_homepage: true
