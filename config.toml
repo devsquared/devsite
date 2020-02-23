@@ -68,7 +68,7 @@ unsafe = true
                                                       #### Home Page Info
   home_mode = "post"                                     # [post, other] home mode
   home_paginate = 6                                      # special amount of posts in each home post page
-  avatar = "images/avatar.png"                           # URL of avatar shown in home page
+  avatar = "images/profile-pic.jpg"                      # URL of avatar shown in home page
   subtitle = "Hello World!"                              # subtitle shown in home page
 
   socialShare = true                                     # whether to show social share links in post page
