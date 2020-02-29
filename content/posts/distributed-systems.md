@@ -2,14 +2,14 @@
 title: "Distributed Systems"
 date: 2020-02-29T11:04:49+08:00
 lastmod: 2020-02-29T11:04:49+08:00
-draft: true
-description: ""
+draft: false
+description: "First part of a new series. Let's learn about distributed systems!"
 show_in_homepage: true
-show_description: false
+show_description: true
 license: ''
 
 tags: ['cloud', 'Distributed Systems', 'Today's Software']
-categories: ['software']
+categories: ['Software',]
 
 featured_image: ''
 featured_image_preview: ''
