@@ -12,7 +12,7 @@ tags: ['learning', 'life']
 categories: ['Life']
 
 featured_image: ''
-featured_image_preview: ''
+featured_image_preview: 'images/social/howILearn.png'
 
 comment: false
 toc: false
