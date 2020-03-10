@@ -2,7 +2,7 @@
 title: "Distributed Systems"
 date: 2020-03-07T11:04:49+08:00
 lastmod: 2020-03-07T11:04:49+08:00
-draft: false
+draft: true
 description: "First part of a new series. Let's learn about distributed systems!"
 show_in_homepage: true
 show_description: true
