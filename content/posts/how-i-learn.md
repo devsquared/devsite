@@ -1,4 +1,5 @@
 ---
+image: 'images/social/howILearn.png'
 title: "How I Learn"
 date: 2020-02-22T11:04:49+08:00
 lastmod: 2020-02-22T11:04:49+08:00
@@ -12,7 +13,7 @@ tags: ['learning', 'life']
 categories: ['Life']
 
 featured_image: ''
-featured_image_preview: 'images/social/howILearn.png'
+featured_image_preview: ''
 
 comment: false
 toc: false
