@@ -1,5 +1,6 @@
 ---
-image: 'images/social/howILearn.png'
+images: 
+- images/social/howILearn.png
 title: "How I Learn"
 date: 2020-02-22T11:04:49+08:00
 lastmod: 2020-02-22T11:04:49+08:00
