@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: 2020-02-02T11:04:49+08:00
-lastmod: 2020-02-02T11:04:49+08:00
+date: "{{ dateFormat "Monday, Jan 2, 2006, 15:04:05 CST" .Date }}"
+lastmod: "{{ dateFormat "Monday, Jan 2, 2006, 15:04:05 CST" .Date }}"
 draft: true
 description: ""
 show_in_homepage: true

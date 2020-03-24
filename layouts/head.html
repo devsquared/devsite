@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
+  <head>
+    {{ with .Params.robots }}<meta name="robots" content="{{ . }}">{{ end }}
+    <meta charset="utf-8">
+  <!-- Enable responsiveness on mobile devices-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Resources.ByType "image" }}{{ range . | first 1 }}{{ .Name | replaceRE ".jpg" "" | humanize | title }}{{ end }}{{ end }}{{ end }}</title>
+      <meta name="description" content="{{ .Site.Params.description }}"/>
+     <link rel="dns-prefetch" href="{{ .Site.BaseURL }}">
+    <link rel="preconnect" href="{{ .Site.BaseURL }}">
+    <link rel="canonical" href="{{ .Site.BaseURL }}"/>
+      <!-- open graph -->
+      <meta property="og:type" content="website" />
+     <meta property="og:title" content="{{ .Site.Title }}"/>
+     <meta property="og:description" content="{{ .Site.Params.description }}"/>
+     <meta property="og:site_name" content="{{ .Site.Title }}"/>
+     <meta property="og:url" content="{{ .Site.BaseURL }}"/>
+     <meta property="og:locale" content="en">
+     {{ if .Params.og_image }}
+     <meta property="og:image" content="http://devsquared.space{{ .Params.og_image | relURL }}"/>
+     <meta property="og:image:secure_url" content="{{ .Params.og_image | absURL }}"/>
+     {{ else }}
+     <meta property="og:image" content="http://devsquared.space{{ .Site.Params.og_image | relURL }}"/>
+     <meta property="og:image:secure_url" content="{{ .Site.Params.og_image | absURL }}"/>
+     {{ end }}
+     <meta property="og:type" content="website"/>
+     <!-- twitter -->
+     <meta name="twitter:card" content="summary_large_image"/>
+     <meta name="twitter:image:src" content="{{ .Site.Params.og_image }}"/>
+      <meta name="twitter:card" content="summary"/>
+      <meta name="twitter:description" content="{{ .Site.Params.description }}"/>
+    {{ partial "styles.html" . }}
+    {{ range .Pages }}{{ if .HasShortcode "instagram" }}<link rel="stylesheet" href="/inst.css" />{{ end }}{{ end }}
+      </head>

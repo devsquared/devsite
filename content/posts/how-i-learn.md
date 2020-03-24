@@ -13,7 +13,7 @@ license: ''
 tags: ['learning', 'life']
 categories: ['Life']
 
-featured_image: ''
+featured_image: '/images/site/RichardFeynman.png'
 featured_image_preview: ''
 
 comment: false
@@ -29,9 +29,8 @@ of research on how to best do this. This article will explain how I go about lea
 ## Feynman Learning Technique
 
 The great physicist [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) knew how to learn. Apparently he learned 
-so well that he became on of the world's greatest scientist. He is well known for many things, mostly physics for obvious reasons. 
-But also one that is important to everybody, no matter the field of study. This is his learning technique. You may have heard of it, 
-but let's define it. 
+so well that he became on of the world's greatest scientist. He is well known for his contributions to physics. 
+But also for something that is important to everybody, no matter the field of study - his learning technique.
 
 **The four steps to learning anything:**
 1. Choose a concept you wish to learn about
@@ -46,34 +45,28 @@ the point is simply to teach and less about who the learner is.
 
 ## The Why
 
-Let's dive into why I feel that this technique is so effective. Feynman's technique allows for you to do some research in something the 
-you find interesting, attempt to teach or pass on that new knowledge, and then identify ways for yourself to improve in the area. I find 
-this really helpful as mentoring or teaching someone else is a really good way to further your learning. And it also is a really quick 
-way to find gaps as the person you are teaching will almost always press your knowledge with questions. To compare it to the world 
-of software, this cycle is very similar to the development cycle - gather requirements, build, test, repeat. In software, we test to 
-find bugs that we need to fix. In learning, we test our knowledge by teaching in order to find places we can address lack of knowledge. 
+Let's dive into why I feel that this technique is so effective. Feynman's technique allows for you to do some research in something
+that you find interesting, attempt to teach or pass on that new knowledge, and then identify ways for yourself to improve in the area.
+I find this really helpful as mentoring or teaching someone else is a really good way to further your learning. And it also is a
+really quick way to find gaps as the person you are teaching will almost always press your knowledge with questions. To compare it to
+the world of software, this cycle is very similar to the development cycle - gather requirements, build, test, repeat. In software,
+we test to find bugs that we need to fix. In learning, we test our knowledge by teaching in order to find places we can address lack
+of knowledge. 
 
 
 ## How It Has Helped Me
 
-Throughout my career as a software engineer, I have utilized this technique a lot. 
-
-When I was an intern, I knew that I needed to learn about writing proper unit tests for my code. So I went out and bought a huge, 800+ 
-page textbook to read. After many pokes of fun from my lovely wife and many hours of reading, I took that knowledge to work and fixed my 
-unit tests that I had. Then, I went and analyzed the test code base at the company. From this, I found some trends that needed some 
-fixing. I then asked the leader of our CI/CD team for some input on problems that he has seen. With all of this, I gave a dev talk 
-for all of the devs at our company. Here I highlighted what I had learned and some trends that I saw. This was a great experience and 
-allowed me to become somewhat of a resource for testing. It also allowed me to realize more gaps that I had in this area. 
-
-This has also helped me recently when looking towards building service-oriented architecture. I went to two really good conferences 
-last year where this was a large focus. With that, I started exploring and began trying to teach others. This has allowed me to notice 
-the gaps and I have. 
+This has helped me a lot in my day to day. As an intern, I utilized this mainly by explaining to others what I was doing with a
+certain task. This cropped up questions that I then was able to turn into knowledge about writing software. As I moved up into 
+a junior dev role, I made sure to help others whenever I could about something that I felt confident about. Unit testing was an
+area that I had recently read a large book on. So I gave a talk and many people gave me valuable feedback or asked questions
+that furthered my learning. As a senior now, one of my favorite parts of the job is helping others or mentoring. This is huge 
+in allowing me to find gaps that I have as I try to help.
 
 ## What's Next
 
-With this, I want to use this blog as a way for me to utilize this technique. As I learn something, I would like to post my learnings. 
-This allows me to teach others and notice gaps that I have as I research. Then I can grow that way. So as I put up posts, feel free to 
-point out areas I can improve or areas that I have missed. 
+With this, I want to use this blog as a way for me to utilize this technique. As I learn something, I would like to post my
+learnings. This allows me to teach others and notice gaps that I have as I research. Then I can grow that way. So as I put up posts,
+feel free to point out areas I can improve or areas that I have missed. After all, you are just helping me learn!
 
-With that being said, I intend to do a series on Distributed Systems and the concepts that go with these. Should be a fun one. Thanks 
-for reading! Cheers!
+Thanks for reading! Cheers!
