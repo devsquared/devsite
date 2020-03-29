@@ -1,4 +1,6 @@
 ---
+images:
+- images/social/FILLINHERE.png
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: "{{ dateFormat "Monday, Jan 2, 2006, 15:04:05 CST" .Date }}"
 lastmod: "{{ dateFormat "Monday, Jan 2, 2006, 15:04:05 CST" .Date }}"

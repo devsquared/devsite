@@ -29,7 +29,7 @@ of research on how to best do this. This article will explain how I go about lea
 ## Feynman Learning Technique
 
 The great physicist [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) knew how to learn. Apparently he learned 
-so well that he became on of the world's greatest scientist. He is well known for his contributions to physics. 
+so well that he became one of the world's greatest scientist. He is well known for his contributions to physics. 
 But also for something that is important to everybody, no matter the field of study - his learning technique.
 
 **The four steps to learning anything:**

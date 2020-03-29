@@ -1,5 +1,5 @@
 ---
-title: "Distributed Systems"
+title: "Let's Learn: Distributed Systems"
 date: 2020-03-07T11:04:49+08:00
 lastmod: 2020-03-07T11:04:49+08:00
 draft: true
@@ -8,8 +8,8 @@ show_in_homepage: true
 show_description: true
 license: ''
 
-tags: ["cloud", "Distributed Systems", "Today's Software"]
-categories: ["Software"]
+tags: ["cloud", "Distributed Systems", "Let's Learn"]
+categories: ["Let's Learn"]
 
 featured_image: ''
 featured_image_preview: ''
@@ -20,115 +20,77 @@ autoCollapseToc: true
 math: false
 ---
 
-What are some of the thoughts and ideas that build things like AWS, GCP, and other cloud computing platforms? You have probably 
-heard of concurrency, microservices, and serverless, but how do these ideas take shape? In this series, we will dive into a 
-bunch of concepts in modern day software. First, we start with distributed systems.
+![Let's Learn: Distributed Systems](/images/social/letslearndistributedsystem.png)
 
-What are distributed systems? You have probably heard the term used. How do they affect the way that we create 
-software? What benefits do they provide us? Let's take a deeper look at distributed systems.
+Distributed systems are a major part of the world now that technology has advanced to the point that it is in. This post aims to give a basic explanation of what distributed systems are and how they are used around us everyday from the perspective of computer science.
 
-### Definition
+## What is a distributed system?
 
-[Wikipedia](https://en.wikipedia.org/wiki/Distributed_computing) gives the definition of a distributed system as "a system whose 
-components are located on different networked computers" that "communicate and cooridinate their actions by passing messages to one 
-another". The main thing here to notice is that we have some separated components, or nodes, that communicate in order to get 
-some action done. This idea shouldn't be too crazy as our own human bodies are fairly complex distributed systems when you 
-look internally - respiratory system, digestive system, etc.
+[Wikipedia ](https://en.wikipedia.org/wiki/Distributed_computing)  defines a distributed system as "a system whose components ... communicate and coordinate their actions by passing messages to one another."
 
-# Overview
+Simply put, a distributed system is a bunch of computers working together to get some defined job done. This system often looks as if it is a single computer to an end user.
 
-From the definition, we can see that we simply have some machines that communicate with each other and work together to get some goal 
-done. These machines can be pretty much anything - computers, virtual machines, containers, etc. - as long as they can communicate 
-with one another. These machines each work towards some common goal of the system. Think about all of the pieces of the digestive system 
-in the human body. Though they all work towards the common goal of keeping the body well-nourished and clean of waste, they each 
-respectively have a defined goal to get done. 
+There are three key ideas that distributed system allow us to look at: 
 
-Distributed systems have three main characteristics: components fail independently of others, components run concurrently, and sharing is very limited.
+ - **Shared State** - the idea that our components in our system have access to some shared things
+ - **Concurrency** - when tasks can run at overlapping times
+ - **Independent Failures** - the ability for components to fail separately from one another
 
-### Independent Failures
+## Why a distributed system?
 
-Independent failures is an important part of distributed systems. It is important to keep in mind that though the components fail
-independently we can still have issues with what is called **cascading failure**. This is the concept of having a component fail
-that then leads to the failure of components down stream. For a great talk about this concept (along with many other great concepts),
-see this [presentation](https://www.youtube.com/watch?v=CZ3wIuvmHeM).
+Distributed systems, just like everything else in the world, have pros and cons.
 
-There are many strategies with dealing with failures. It is important to keep in mind though that considering each component's
-goal is to just do its defined job, we should expect a component to fail in narrowly defined ways as well. This helps leverage
-some of the resiliency that distributed systems can give us.
+Let's start with the negative side of things. Distributed systems tend to be complex to manage. Having a lot of moving parts is inherently more complex than just having a single part. Deploying these systems can also be quite a headache. Three main issue pop into mind when talking about these systems:
 
-### Concurrency
+ - **Task Delegation** - When and where to schedule tasks can become complex if a system is not well thought out.
+ - **Latency** - As a system grows wide with many components, communication between components takes more time. This often leads to trade-offs being made in other areas.
+ - **Observability** - Debugging, tracing, and logging grows to be rather tough when you have a complex distributed system. 
 
-Concurrency is a major concept with distributed systems. I intend for my next article in this series to be strictly about concurrency, 
-so for now let's just define it. Concurrency is the starting and running of tasks or jobs in overlapping timeframes. This *is* different 
-from parallelism, but more on that in next post. 
 
-### Sharing
+Now let's look at the positive side of things. Distributed systems allow for a lot of flexibility. This flexibility is realized in two main ways - scalability and performance. The other added benefit is its reliability. 
 
-In distributed systems, there is very little sharing going on between the autonomous components. Some of the main things that need 
-to be kept in mind here are time, memory, and compute power. These are not shared between nodes (generally). This provides us with the 
-ability to allowing each component to just committing to doing its job and nothing else. Do not need to worry about tasks overlapping 
-and getting near a compute or memory limit. 
+### Horizontal Scaling
 
-One of the main issues this causes is the need of some global way to handle some of our cross-cutting concerns. These concerns include 
-things like logging, tracing, and storage.
+Before hopping into how it helps us, let's define what horizontal scaling is. When you think about scaling a machine, you generally think about downloading more RAM or slapping on some more cores. This concept is vertical scaling - that is upgrading the hardware on a single machine. Horizontal scaling is when we add more computers to a system. 
 
-# Benefits
+In other words, think about a distributed system that hosts a chat between two clients. At the beginning, we only have one node that hosts this connection. If we have more clients that want to chat, the system will spin up more of the node that hosts the connection. This allows for us to distribute heavy usage on the system. 
 
-- **Scalability:** Since the load is distributed across many nodes, distributed systems are very good at dealing with scale. 
-*Horizontal Scaling* is an even greater benefit to distributed systems as we can create multiples of the same node if the 
-load grows to that scale. 
+### Breaking Up Tasks
 
-- **Performance:** Considering we distribute the load of some job or task to an entire network of machines, we can see that 
-performance will generally be better. We also have a clearer way to see when and where bottlenecks are occurring and can design 
-solutions to these bottlenecks easier.
+A distributed system generally has good performance numbers because it comes with an inherent amount of efficiency. This comes from the fact that we take whatever general job that the overall system is given and break it up into smaller tasks that individual nodes take on.
 
-- **Reliability:** Leveraging independent node failure into a good fault-tolerant solution means that our system will be very 
-reliable when distributed. If a node goes down, we can do many things such as spinning up a new node of the same kind to take the 
-process and reroute the process to fall-back scenarios.
+For this concept, think about the human body. The general job for the body is to keep you healthy, up-and-moving, and alive. This job though is dispersed to many tasks handed to our many systems - digestive, respiratory, and cardiovascular to name a few. Even these systems have individual parts that break up the work that it is to do.
 
-## Challenges
+ This also allows for the components in our system to be specialized. In a similar way that we make objects in an object-oriented paradigm very focused, we too want our components of a distributed system to be focused on its task. For instance in our chat example from earlier, we may want a database to store the history of a conversation. This database though is focused on doing just that. Other components can focus on the other parts of creating a chat application.
 
-There are some challenges that need to be brought up when considering distributed systems.
+### Reliability
 
-- **Concurrency:** While concurrency is a great plus with this approach, it does need to be highlighted that it can be a problem 
-if not approached properly. With this comes the problem of scheduling - how do we have our prioritized tasks run when needed? These 
-decisions on when and where to run things can be difficult. Further, what happens when we are dealing with near max scale on our system 
-and we have a failure. What happens to the currently running tasks? These are some things to keep in mind.
+One of the largest benefits from a distributed system is its reliability. The biggest reason for this is a concept called *fault tolerance*. Earlier in the article, we mentioned that distributed systems allow for individual failures. This allows for us to easily handle faults. If one of our many components finds an error, we can easily utilize our flexibility by spinning up resources to aid in resolving the issue.
 
-- **Latency:** As our system gets bigger and wider, we can start having issues with latency. When this becomes a large problem 
-the "Choose Two Triangle" demands a choice from availability, consistency, and latency.
+For example, let's say a user of our chat application sees that their messages are not properly showing up. Somehow our component that deals with sending the messages is not working as we want it to. To solve the issue, let's just use the old trusted method of restarting the machine. In this case though, we can just spin up a new "message-sending" component and route the user their. We then just terminate the old one and life is (hopefully) good.
 
-- **Observability:** Tracing, debugging, and logging are all some of the cross-cutting concerns mentioned earlier. With these, 
-distributed systems can pose a problem with observing our applications.
+Their are obviously more things that come into play in the example above (log consumption, finding the error, and then fixing it so it doesn't happen again), but it explains the fault tolerance that we can expect from a distributed system. Since we have multiple machines running within our system, we can spin up and move around instances of these components as we need. This flexibility allows for great reliability.
 
-# Types of Distributed Systems
+## Examples of Distributed Systems
 
-- **Client-server:** Smart clients contact server for data to display to the user. When a permenant change is needed, input is sent 
-to the server from the client.
+Distributed systems are all around us nowadays. The internet itself is a great example. Any cloud computing platform that you use (AWS, GCP, Azure, etc) are all examples. Some other notables include:
 
-- **Three-tier:** Client logic is moved to a middle layer so that there can be stateless clients. This simplifies development and 
-is the architecture for most web apps.
+ - telecommunication networks like telephone and cellular networks
+ - MMO video games
+ - aircraft control systems
 
-- **n-tier:** Furthering of the three-tier architecture. This one is known for the success of application servers.
+There are many types of distributed systems. I am not going to go into the types as I am keeping this post fairly general. But for a good starting point, check out the [wikipedia page](https://en.wikipedia.org/wiki/Distributed_computing) for it.
 
-- **Peer-to-peer:** Collection of machines that can play the role of client and/or server and there are no defined task-oriented 
-machines. Think bitcoin networks and BitTorrent.
+## Conclusion
 
-# Distributed Systems in the Wild
+The purpose of this article was to give a decent rundown of what a distributed system is. We looked at what concepts were involved with these systems including some of the pros and cons. We also looked at a few examples. 
 
-Many things that you know and use daily are actually distributed systems. Telephone networks, the Internet, MMO games, aircraft 
-control systems, and many other things are distributed systems. We use them everyday. Cloud providers that allow you to build 
-applications with their services heavily rely on distributed systems. 
-[Here](https://aws.amazon.com/builders-library/challenges-with-distributed-systems/) is a great post about challenges with distributed 
-systems. In this article, it reads "every AWS API" is a distributed system.
+If you have any thoughts or questions, let me know! 
 
-# Summary
+Until next time! Cheers!
 
-All in all, distributed systems provide us some benefits that we take advantage of nearly everyday. With proper strategies in place 
-distributed systems can allow us to create performant, reliable, and scalable applications. It is also worth noting how prevelant 
-this pattern is now. Any cloud provider that you can think of is built on distributed systems. The internet, telephone and cellular 
-networks, MMO video games, and air traffic control systems are all things that are used everyday around us. Beyond this, many of 
-the current software patterns are tending towards this - serverless and service-oriented architectures.
+---------------------------
 
-This post is the beginning of diving into some concepts around distributed systems, cloud computing, and similar areas. Stick 
-around for more on these topics. 
+# Let's Learn Series
+
+I hope that you learned at least a little something from this post. This is a part of my **Let's Learn** series. In this series, I break down a topic that I find interesting. Generally these topics are in or around the field of software, math, or computer science. If you have any ideas for a good topic, let me know! Also check out my [post](https://devsquared.space/2020/02/how-i-learn/) on how I learn, as that is how this series came to be.
