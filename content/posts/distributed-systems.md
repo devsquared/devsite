@@ -1,4 +1,6 @@
 ---
+images:
+- images/social/letslearndistributedsystem.png
 title: "Let's Learn: Distributed Systems"
 date: 2020-03-07T11:04:49+08:00
 lastmod: 2020-03-07T11:04:49+08:00
