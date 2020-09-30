@@ -24,36 +24,38 @@ math: false
 
 ![Let's Learn: Distributed Systems](/images/social/letslearndistributedsystem.png)
 
-Distributed systems are a major part of the world now that technology has advanced to the point that it is in. This post aims to give a basic explanation of what distributed systems are and how they are used around us everyday from the perspective of computer science.
+Distributed systems are a major part of the world with the current state of technology. This post aims to give a basic explanation of 
+what distributed systems are and how they are used everyday from the perspective of computer science.
 
 ## What is a distributed system?
 
-[Wikipedia ](https://en.wikipedia.org/wiki/Distributed_computing)  defines a distributed system as "a system whose components ... communicate and coordinate their actions by passing messages to one another."
+[Wikipedia](https://en.wikipedia.org/wiki/Distributed_computing)  defines a distributed system as "a system whose components ... communicate and coordinate their actions by passing messages to one another".
 
-Simply put, a distributed system is a bunch of computers working together to get some defined job done. This system often looks as if it is a single computer to an end user.
+Simply put, a distributed system is a collection of computers working to complete a job together. This system often looks 
+as if it is a single computer to an end user.
 
-There are three key ideas that distributed system allow us to look at: 
+There are three key ideas about distributed system: 
 
- - **Shared State** - the idea that our components in our system have access to some shared things
- - **Concurrency** - when tasks can run at overlapping times
+ - **Shared State** - the idea that components in the system have access to some shared resources
+ - **Concurrency** - the capacity for multiple tasks to run at overlapping times
  - **Independent Failures** - the ability for components to fail separately from one another
 
 ## Why a distributed system?
 
 Distributed systems, just like everything else in the world, have pros and cons.
 
-Let's start with the negative side of things. Distributed systems tend to be complex to manage. Having a lot of moving parts is inherently more complex than just having a single part. Deploying these systems can also be quite a headache. Three main issue pop into mind when talking about these systems:
+On the negative side of things, distributed systems tend to be complex to manage. Multiple moving parts is inherently more complex than just having a single part. Deploying these systems can also be quite a headache. Three main issue arise when talking about these systems:
 
  - **Task Delegation** - When and where to schedule tasks can become complex if a system is not well thought out.
  - **Latency** - As a system grows wide with many components, communication between components takes more time. This often leads to trade-offs being made in other areas.
  - **Observability** - Debugging, tracing, and logging grows to be rather tough when you have a complex distributed system. 
 
 
-Now let's look at the positive side of things. Distributed systems allow for a lot of flexibility. This flexibility is realized in two main ways - scalability and performance. The other added benefit is its reliability. 
+On a positive note, distributed systems allow for a lot of flexibility and reliability. This flexibility is realized in two main ways - scalability and performance. 
 
 ### Horizontal Scaling
 
-Before hopping into how it helps us, let's define what horizontal scaling is. When you think about scaling a machine, you generally think about downloading more RAM or slapping on some more cores. This concept is vertical scaling - that is upgrading the hardware on a single machine. Horizontal scaling is when we add more computers to a system. 
+Before hopping into how it helps us, let's define what horizontal scaling is. One way to scale a machine is by downloading more RAM, slapping on some more cores, or adding a coprocessor. This concept is vertical scaling - that is upgrading the hardware on a single machine. Horizontal scaling is when we add more computers to a system. 
 
 In other words, think about a distributed system that hosts a chat between two clients. At the beginning, we only have one node that hosts this connection. If we have more clients that want to chat, the system will spin up more of the node that hosts the connection. This allows for us to distribute heavy usage on the system. 
 
@@ -74,6 +76,8 @@ For example, let's say a user of our chat application sees that their messages a
 Their are obviously more things that come into play in the example above (log consumption, finding the error, and then fixing it so it doesn't happen again), but it explains the fault tolerance that we can expect from a distributed system. Since we have multiple machines running within our system, we can spin up and move around instances of these components as we need. This flexibility allows for great reliability.
 
 ## Examples of Distributed Systems
+
+![Cloud Computing](/images/site/cloudCompute.png)
 
 Distributed systems are all around us nowadays. The internet itself is a great example. Any cloud computing platform that you use (AWS, GCP, Azure, etc) are all examples. Some other notables include:
 
