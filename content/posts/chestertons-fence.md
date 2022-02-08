@@ -1,19 +1,19 @@
 ---
 images:
-- images/social/howILearn.png
-  title: "A Fence in the Road"
-  date: 2022-02-05T11:04:49+08:00
-  lastmod: 2022-02-05T11:04:49+08:00
-  draft: true
-  description: "Good developers avoid cases of Chesterton's Fence; great ones know how to deal with them."
-  show_in_homepage: true
-  show_description: true
-  license: ''
+- images/social/fence-in-the-road.png
+title: "A Fence in the Road"
+date: 2022-02-05T11:04:49+08:00
+lastmod: 2022-02-05T11:04:49+08:00
+draft: false
+description: "Good developers avoid cases of Chesterton's Fence; great ones know how to deal with them."
+show_in_homepage: true
+show_description: true
+license: ''
 
 tags: ['golang', 'go', 'maintainable']
 categories: ['Software']
 
-featured_image: '/images/site/RichardFeynman.png'
+featured_image: ''
 featured_image_preview: ''
 
 comment: false
@@ -33,8 +33,8 @@ The so-called "Prince of Paradox" gave us this [line of thinking](https://en.wik
 
 Most software developers can remember a time when they stumbled upon some code that made no sense.
 We often ask "What is/was the purpose of this?". Although this is nearly always fruitless, we can talk about
-the incompetence of the developer because, if we are trying to write maintainable code, our code shouldn't 
-present future developers from running into this dilemma. But how do we deal with running into
+the incompetence of the developer because our code shouldn't present future developers from running into this 
+dilemma if we are trying to write maintainable code. But how do we deal with running into
 this and bettering the situation?
 
 ### How to Avoid Building this Fence
