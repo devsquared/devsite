@@ -31,11 +31,10 @@ The so-called "Prince of Paradox" gave us this [line of thinking](https://en.wik
 
 ## Applying this to Maintainable code
 
-Most software developers can remember a time when they stumbled upon some code that made no sense.
-We often ask "What is/was the purpose of this?". Although this is nearly always fruitless, we can talk about
-the incompetence of the developer because our code shouldn't present future developers from running into this 
-dilemma if we are trying to write maintainable code. But how do we deal with running into
-this and bettering the situation?
+Stumbling on code that makes little sense is not abnormal for a software engineer. We often ask
+“What is/was the purpose of this?". Although fruitless, we could talk about the incompetence of
+the original developer. Maintainable code shouldn’t present future developers from running into
+this dilemma. But how do we deal with running into this and bettering the situation?
 
 ### How to Avoid Building this Fence
 
@@ -48,20 +47,19 @@ expected to do.
 
 ### Dealing with this Fence
 
-We should all expect to run into this situation when working with software. Chesterton suggests
-just going away and thinking about it. But refactoring (or, in the words of Chesterton, reforming)
-is often about making the code better for the future. As a problem originally in this situation, 
-understanding of what is happening should be of top priority. If you figure out what is happening
-with this fence in the road, congratulations! In this case, consider the structure of the code along with
-the tests. Minor refactors along with tests improvements will surely help the next developer. In the case that
-you can't quite understand the point, a heavier refactor is probably needed. To best handle this, we 
-shouldn't just tear down the fence and forge onward as this could leave logic that we didn't understand
-out to dry. Why not build a temporary bridge over the fence allowing us to cross but considering the fence
-for a longer time? In code, especially when we have a complex set of logic, a [facade](https://en.wikipedia.org/wiki/Facade_pattern) is especially helpful.
-This facade allows us to put in place a launching point for two things:
-- further exploration of what the old code is doing
+
+We should all expect to run into this situation when working with software. Chesterton suggests going away and thinking about it. But refactoring (or, in the words of Chesterton, reforming) is about making the code better. In this situation, understanding of what is happening should be of top priority.
+
+The first step in trying to gather understanding, we should look at the tests. In the best case, the tests will help us understand the expected behavior. In the next best case, the tests will test the logic. This actually gives us something to lean on. Refactor the code and the tests tell us if we have missed something. Even if there is some oddity while working with the tests, you will likely learn what the expected logic was.
+
+In the case that you can’t quite understand the point with little to no tests,
+a heavier refactor is needed. Tearing down the fence and forging onward may leave
+logic behind. Building a bridge over the fence allows us to manage the fence in a
+better way. In code, especially when we have a complex set of logic, a [facade](https://en.wikipedia.org/wiki/Facade_pattern)
+is quite helpful. This facade allows us to put in place a launching point for two things:
+- further exploration of what the old code is/was doing
 - refactoring of the code
 
-Just make sure that when you refactor, you avoid building a new fence!
+Make sure that when you refactor, you avoid building a new fence!
 
-Ultimately, **a good developer avoids building a fence in the road; a great one knows how to deal with one**.
+**A good developer avoids building a fence in the road; a great one knows how to deal with one**.
