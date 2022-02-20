@@ -26,10 +26,6 @@ math: false
 
 When writing maintainable code, readability is the top priority. Not fewest lines of code. Not number of one-liners. Not performance. When code is easy to understand, it is easier to maintain. When code is easier to maintain, it is easier to improve. Start with focusing on readable code. Finish with code that is good in many ways likely due to many contributions from many engineers.
 
-
-{{< tweet user="LBacaj" id="1493983082919120899" >}}
-
-
 What really got me thinking about this was the [tweet](https://twitter.com/LBacaj/status/1493983082919120899). I think that many people underestimate the difficulty and cost in maintaining a codebase. Especially when a team loses the one or two wizards that have all of the magic to massage the system's dark and hidden unknowns. Now some of this maintainability is accomplished through other means (like testing), but I will cover this in other posts. Easing maintainability for future contributors is a must. Imagine you are told tomorrow that you are handing your project to someone else. Do you feel confident that someone else will be able to figure it out without a multi-hour walkthrough meeting?
 
 Writing readable code is a broad and general statement. In order to try and achieve this, I first make it a goal of mine when writing. Often just thinking about the next engineer to come along and see the code helps. Then, I loosely follow these guidelines that I have put together over the years. I am sure that these guidelines - along with this post - will be updated many times. It is important to note that most of these guidelines fit more towards new code. Look out for a future posts on refactoring and the like. With that being said though, gradual progress towards these guidelines are definitely possible.
