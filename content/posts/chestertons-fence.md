@@ -4,7 +4,7 @@ images:
 title: "A Fence in the Road"
 date: 2022-02-05T11:04:49+08:00
 lastmod: 2022-02-05T11:04:49+08:00
-draft: false
+draft: true
 description: "Good developers avoid cases of Chesterton's Fence; great ones know how to deal with them."
 show_in_homepage: true
 show_description: true
@@ -21,6 +21,8 @@ toc: false
 autoCollapseToc: true
 math: false
 ---
+
+!!This post was marked as draft because I am not sure if it adds much value right now. !!
 
 What should we do if we come across a fence in the road? Surely just remove it as it is 
 blocking the way, right? Nobody in their right mind would have put a fence blocking the way.
