@@ -4,7 +4,7 @@ images:
 title: "Importance of Readability"
 date: 2022-02-19T11:04:49+08:00
 lastmod: 2022-02-19T11:04:49+08:00
-draft: false
+draft: true
 description: ""
 show_in_homepage: true
 show_description: true 
