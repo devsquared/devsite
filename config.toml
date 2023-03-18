@@ -118,11 +118,9 @@ unsafe = true
     name = "github"
     url = "https://github.com/devsquared"
 
-  [params.socialIcons]
     name = "linkedin"
     url = "https://www.linkedin.com/in/devinmward/"
 
-  [params.socialIcons]
     name = "twitter"
     url = "https://twitter.com/devissquared"
 
