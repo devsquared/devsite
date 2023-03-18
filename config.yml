@@ -1,4 +1,5 @@
 baseURL: "https://devsquared.space/"
+languageCode: en-us
 title: Devin's Website
 paginate: 5
 theme: hugo-PaperMod
@@ -8,56 +9,20 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-#googleAnalytics: UA-123-45
+# googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
   minifyOutput: true
 
-languages:
-  en:
-    languageName: "English"
-    weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
-    menu:
-      main:
-        - identifier: categories
-          name: Categories
-          url: categories/
-          weight: 10
-        - identifier: tags
-          name: Tags
-          url: tags/
-          weight: 20
-        - identifier: search
-          name: Search
-          url: search/
-          weight: 30
-        - identifier: about
-          name: About
-          url: about/
-          weight: 40
-    #    - identifier: example
-    #      name: example.org
-    #      url: https://example.org
-    #      weight: 30
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # is necessary
-
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Devin's Website
-  description: "Devin's Website and Blog - Have a read"
+  title: Devin Ward
+  description: "My website and blog"
   keywords: [Blog, Portfolio, PaperMod]
   author: Devin Ward
-  images: ["images/avatar.png"]
+  # author: ["Me", "You"] # multiple authors
+  images: ["avatar.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -66,7 +31,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
+  ShowCodeCopyButtons: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -79,11 +44,12 @@ params:
   tocopen: false
 
   assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
     favicon: "favicon.ico"
     favicon16x16: "favicon-16x16.png"
     favicon32x32: "favicon-32x32.png"
     apple_touch_icon: "apple-touch-icon.png"
-    safari_pinned_tab: "safari-pinned-tab.svg"
 
   label:
     text: "Home"
@@ -93,12 +59,12 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: Devin's Website
-    subtitle: "Hello there! Have a read."
-    imageUrl: "images/avatar.png"
+    title: Devin Ward
+    subtitle: "Welcome to my blog!"
+    imageUrl: "avatar.png"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: me
+    imageTitle: my image
     buttons:
       - name: Posts
         url: posts
@@ -108,7 +74,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog!
+    Content: Welcome to my blog
 
   socialIcons:
     - name: twitter
@@ -116,10 +82,15 @@ params:
     - name: github
       url: "https://github.com/devsquared"
 
-  editPost:
-    URL: "https://github.com/devsite/tree/master/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # editPost:
+  #   URL: "https://github.com/devsquared/tree/master/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -132,6 +103,30 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    # example to direct link outwards
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -142,27 +137,3 @@ markup:
     guessSyntax: true
     lineNos: true
     style: monokai
-
-privacy:
-  vimeo:
-    disabled: false
-    simple: true
-
-  twitter:
-    disabled: false
-    enableDNT: true
-    simple: true
-
-  instagram:
-    disabled: false
-    simple: true
-
-  youtube:
-    disabled: false
-    privacyEnhanced: true
-
-services:
-  instagram:
-    disableInlineCSS: true
-  twitter:
-    disableInlineCSS: true
