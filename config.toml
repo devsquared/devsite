@@ -114,13 +114,15 @@ unsafe = true
   [params.gravatar]                                      # Gravatar Info for preferred avatar in home page
     email = ""
 
-  [params.socialIcons]                                        # Social Info in home page
+  [[params.socialIcons]]                                        # Social Info in home page
     name = "github"
     url = "https://github.com/devsquared"
 
+  [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/devinmward/"
 
+  [[params.socialIcons]]
     name = "twitter"
     url = "https://twitter.com/devissquared"
 
