@@ -2,7 +2,7 @@ baseURL = "https://devsquared.space/"
 languageCode = "en"                                      # website language
 defaultContentLanguage = "en"                            # [en, zh, ...] determines which i18n file to use
 title = "Devin Ward | Software Developer"                # website title
-theme = "LoveIt"                                         # theme
+theme = "hugo-blog-awesome"                              # theme
 enableGitInfo = false                                    # whether to use git commit log to generate lastmod record
 hasCJKLanguage = false                                   # whether to include chinese/japanese/korean
 paginate = 12                                            # default amount of posts in each pages
@@ -114,11 +114,17 @@ unsafe = true
   [params.gravatar]                                      # Gravatar Info for preferred avatar in home page
     email = ""
 
-  [params.social]                                        # Social Info in home page
-    GitHub = "devsquared"
-    Linkedin = "devinmward/"
-    Twitter = "devissquared"
-    #Email = "devissquared@gmail.com"
+  [params.socialIcons]                                        # Social Info in home page
+    name = "github"
+    url = "https://github.com/devsquared"
+
+  [params.socialIcons]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/devinmward/"
+
+  [params.socialIcons]
+    name = "twitter"
+    url = "https://twitter.com/devissquared"
 
   [params.share]                                         # Social Share Links in post page
     enable = true
