@@ -10,7 +10,6 @@ enableEmoji = true                                       # whether to use emoji 
 enableRobotsTXT = true                                   # whether to use robots.txt
 og_image = "/images/default_og.png"             
 googleAnalytics = ""                                     # [UA-XXXXXXXX-X] google analytics code
-disqusShortname = ""                                     # Disqus shortname to use Disqus in posts
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
                                                          # copyright description used only for seo schema
 
@@ -62,7 +61,7 @@ unsafe = true
     weight = 4
 
 [params]
-  version = "5.x"                                        # LoveIt theme version
+  env = "production"
   description = "Devin Ward's Blog!"                     # site description
   keywords = ["Devin", "Ward", "Tech"]                   # site keywords
 
