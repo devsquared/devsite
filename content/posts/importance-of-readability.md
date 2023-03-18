@@ -1,25 +1,12 @@
 ---
-images:
-- images/social/importance-of-readability.png
 title: "Importance of Readability"
 date: 2022-02-19T11:04:49+08:00
-lastmod: 2022-02-19T11:04:49+08:00
+tags: ['golang', 'go', 'maintainable', 'readability']
 draft: false
 description: ""
-show_in_homepage: true
-show_description: true 
-license: ''
-
-tags: ['golang', 'go', 'maintainable', 'readability']
-categories: ['Software']
-
-featured_image: ''
-featured_image_preview: ''
-
-comment: false
-toc: false
-autoCollapseToc: true
-math: false
+ShowReadingTime: true
+cover:
+    image: "images/social/importance-of-readability.png"
 ---
 
 *This post goes into my thoughts on Readability in code. Though it is a bit of "you know it when you see it", there are some guidelines I like to try and follow. Because I often write go, my guidelines are informed by this language but I attempt to keep it general. I am also heavily influenced by [this book by Dave Cheney](https://dave.cheney.net/practical-go/presentations/gophercon-israel.html), [Go in Practice book](https://www.manning.com/books/go-in-practice), and my experience. Obligatory "these are my opinions" and "context matters". Even with this, I hope you enjoy the read!*
