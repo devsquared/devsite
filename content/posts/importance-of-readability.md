@@ -1,12 +1,10 @@
 ---
 title: "Importance of Readability"
-date: 2022-02-19T11:04:49+08:00
+date: 2023-03-19T11:04:49+08:00
 tags: ['golang', 'go', 'maintainable', 'readability']
 draft: false
 description: ""
 ShowReadingTime: true
-cover:
-    image: "images/social/importance-of-readability.png"
 ---
 
 *This post goes into my thoughts on Readability in code. Though it is a bit of "you know it when you see it", there are some guidelines I like to try and follow. Because I often write go, my guidelines are informed by this language but I attempt to keep it general. I am also heavily influenced by [this book by Dave Cheney](https://dave.cheney.net/practical-go/presentations/gophercon-israel.html), [Go in Practice book](https://www.manning.com/books/go-in-practice), and my experience. Obligatory "these are my opinions" and "context matters". Even with this, I hope you enjoy the read!*
@@ -19,12 +17,12 @@ Writing readable code is a broad and general statement. In order to try and achi
 
 ### Miscellaneous
 -   Tradeoffs for readability are worth it - most of the time.
--   Above all - be consistent. If someone started the file with puns, I am sorry but follow.
+-   Above all - be consistent. If someone started the file with puns, I am sorry but follow (or fix).
 -   Clarity over brevity.
 -   Package names are important.
 
 ### Naming Identifiers
--   Variables should be just the correct length. Concise. Not overly complicated or overly descriptive. In this simple example, why do we need to label a map a map? Unless  context dictates we should label a map a map, don't label a map a map.
+-   Variables should be just the correct length. Concise. Not overly complicated or overly descriptive. In this simple example, why do we need to label a map a map? Unless context dictates we should label a map a map, don't label a map a map.
 ```go 
 var mapOfUsers map[string]User
 var users map[string]User
@@ -55,7 +53,7 @@ for _, b := range branches {
 }
 ```
 
--   Context matters. In this example, we have developed an understanding of `i` as index, `x` as a simple number variable, and `n` as a limit number for repetition. Other examples are things like `db`  for database, `s` for strings, a method ending in `f` as a formatting method, and many others.
+-   Context matters. In this example, we have developed an understanding of `i` as index, `x` as a simple number variable, and `n` as a limit number for repetition. Other examples are things like `db` for database, `s` for strings, a method ending in `f` as a formatting method, and many others.
 ``` go
 func MultiplyXBySelfNTimes(x, n int) int {
 	total := 0
@@ -70,13 +68,17 @@ func MultiplyXBySelfNTimes(x, n int) int {
 -   Functions and methods should tell us what they do.
 
 
-### Comments
--   The more use something gets, the more it should probably be commented.
--   Always comment public functions/methods.
--   The need to refactor is proportional to the number of comments on a part of the code. If you start writing your third paragraph of comment, it may be better to refactor it.
+### Comments/Documentation
+> Documentation, as used below, is referencing in code documentation using tools such as javadocs or godocs. Comments are simply 
+> in line comments. 
+
+-	When code is well-written and readable, it may just need documentation.
+-   The more use something gets, the more it should probably be documented.
+-   Always document public functions/methods.
+-   The need to refactor is proportional to the number of comments on a part of the code. If you start writing your third paragraph of comment, it may be better to refactor it. Furthermore, if you are scrolling through a function and there is a comment outlining the entire flow, the structure and/or readability is probably at fault.
 
 ### Structure
 - Functions should be as short as makes sense.
 - Complex conditionals are better hidden in simple functions. It is easier to read something like
 `if meetsCriteria()` than the 5 pieces of criteria in a line.
-- Don't use naked returns.
+- Don't use naked returns. It is important not to leave out context of what is happening - especially what is being returned. 
