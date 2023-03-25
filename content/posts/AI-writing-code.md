@@ -66,7 +66,7 @@ indexed into the chosen solution and to some this is too far. Imagine what happe
 Now I understand that higher utilization of certain tools cause adjustments in how we work. If this was a problem, our
 product requirements would get better. Like talking to a genie, we would figure out some way to trick it into doing what we wanted.
 
-At the end of the day, it seems pretty clear that we will still need a human involved in the loop. And even still, it is still
+It seems pretty clear that we will still need a human involved in the loop. And even still, it is still
 important to understand and utilize tools that are available for us to use. At the end of the day, if a tool writes all the
 boilerplate code that you loathe writing for you and just needs you to review it, are you really going to say no? Would you
 say no if it was available for copying and pasting from somewhere else in your codebase or Stack Overflow?
