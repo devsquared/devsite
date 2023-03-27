@@ -121,11 +121,10 @@ menu:
       name: About
       url: /about/
       weight: 40
-    # example to direct link outwards
-    # - identifier: example
-    #   name: example.org
-    #   url: https://example.org
-    #   weight: 30
+    - identifier: newsletter
+      name: State of Dev Newsletter
+      url: https://devsprs.substack.com/?r=c9zks&utm_campaign=pub&utm_medium=web
+      weight: 50
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
