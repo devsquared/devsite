@@ -8,8 +8,9 @@ Welcome to my blog site!
 
 ## Bio
 
-Well hello there! I am Devin Ward. I am a software engineer that really enjoys writing go code. In my free time, you would
-catch me running, camping, or hiking. I also play lots of video games.
+Well hello there! I am Devin Ward. I am a software engineer that really enjoys writing go and rust code. In my free time, you would
+catch me running, camping, or hiking. I also really like teaching and learning and general concepts around education. 
+I strive to push myself towards growth and am a big thinker. 
 
 ## My Blog's Mission Statement
 
@@ -20,7 +21,7 @@ so maybe they can help someone who reads them.
 ## Socials
 
 My ideas, opinions, and all of those things change. So if you disagree, I would
-love to hear from you.
+love to hear from you; help me broaden my horizons.
 
 Reach out to me on any of my socials:
 
