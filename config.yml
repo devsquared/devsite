@@ -1,4 +1,4 @@
-baseURL: "https://devsquared.space/"
+baseURL: "https://www.devinward.me/"
 languageCode: en-us
 title: Devin's Website
 paginate: 5
@@ -77,8 +77,6 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/devissquared"
     - name: github
       url: "https://github.com/devsquared"
 
@@ -121,10 +119,6 @@ menu:
       name: About
       url: /about/
       weight: 40
-    - identifier: newsletter
-      name: State of Dev Newsletter
-      url: https://devsprs.substack.com/?r=c9zks&utm_campaign=pub&utm_medium=web
-      weight: 50
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
