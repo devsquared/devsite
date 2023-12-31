@@ -34,6 +34,8 @@ params:
   ShowCodeCopyButtons: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
+  ShowFullTextInRSS: true
+  # if we dont get good RSS from the above, we will need to fork as this outlines: https://medium.com/@ericapisani/setting-up-an-rss-feed-for-a-hugo-blog-using-the-papermod-theme-a141b3fa1ccd
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -77,6 +79,8 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
+    - name: "rss"
+      url: "https://www.devinward.me/index.xml"
     - name: github
       url: "https://github.com/devsquared"
 
@@ -130,3 +134,9 @@ markup:
     guessSyntax: true
     lineNos: true
     style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
