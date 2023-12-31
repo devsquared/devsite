@@ -1,6 +1,6 @@
 # devsite
 
-A repo that holds the content for the site [devsquared.space](https://devsquared.space/).
+A repo that holds the content for the site [devinward.me](https://www.devinward.me/).
 
 ## Theme currently is PaperMod
 
