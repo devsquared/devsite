@@ -17,10 +17,12 @@ One of the questions that I get the most often is "why do you run?" or similar v
 me to actually think about that question. Why do I run?
 
 -----
+
 Quick disclaimer: I am not claiming that this will work for others. Mental health and physical health are important, 
 complex, and personal journeys. Please consult professionals.
 
 **TL;DR**: I find running to be great for my mental health and for feeling a good sense of progress in life.
+
 -----
 
 To be honest, it isn't about my physical health - at least not mainly. This is obviously a nice side effect. I am 
