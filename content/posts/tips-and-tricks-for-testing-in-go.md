@@ -60,22 +60,20 @@ opinionated. I love talking about this and enjoy somebody changing my mind. So l
 
 ### Small Example of Table Test in Go
 ```Go
-func TestAdd(t *testing.T) {
+func TestSquare(t *testing.T) {
 	// define what a test case looks like
     type testcase struct {
 		name         string
 		inputA       int
-        inputB       int 
 		expected     int
 	}
 
     // clearly define each test case - this is where you add new cases when you find a bug or edge case
 	cases := []testcase{
 		{
-			name:         "simple add 1 to 1",
-			inputA:       1,
-            inputB:       1,
-			expected:     2,
+			name:         "simple square 1",
+            inputA:       1,
+			expected:     1,
 		},
 		// ... many more cases
 	}
@@ -83,7 +81,7 @@ func TestAdd(t *testing.T) {
     // engine of test - iterate through cases and run each
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
-			actual := Add(tc.inputA, tc.inputB)
+			actual := Square(tc.inputA)
 			
             // use assertion library of choice to compare and report
             if actual != tc.expected {
