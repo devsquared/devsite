@@ -3,7 +3,7 @@ title: "Tips and Tricks for Testing in Go"
 date: 2025-02-17T20:07:55-06:00
 tags: ["software", "engineering", "testing"]
 author: "Devin Ward"
-draft: true
+draft: false
 description: ""
 hideSummary: false
 ShowReadingTime: true
