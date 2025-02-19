@@ -3,7 +3,7 @@ title: "Kicking Off the New Year"
 date: 2024-01-04T09:31:10-07:00
 tags: ["running", "life", "lifting", "goals"]
 author: "Devin Ward"
-draft: false
+draft: true
 description: ""
 hideSummary: false
 ShowReadingTime: true

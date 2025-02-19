@@ -11,7 +11,7 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ---
 
-AI seems to be everywhere. The super hot topic. [LLMs](https://en.wikipedia.org/wiki/Wikipedia:Large_language_models), or just generally known as AI, creeping into
+AI seems to be everywhere. The super hot topic. [LLMs](https://en.wikipedia.org/wiki/Wikipedia:Large_language_models), or just generally AI, creeping into
 software development. Will it [take our jobs](https://youtu.be/APo2p4-WXsc)?
 
 It can be scary to think about that. Hell, the current climate around tech jobs is scary in and of itself

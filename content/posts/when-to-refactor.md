@@ -27,7 +27,7 @@ experience.
 
 But what about leveraging this seemingly inherent part of software development?
 
-Debt as a concept is already something that we understand when it comes to money. And it current world economy, it is 
+Debt as a concept is already something that we understand when it comes to money.It is 
 something that we often have to utilize especially businesses and startups. Why should tech debt be any different? 
 
 When we are low on money and need to spread out the cost of something, we often take on some debt. This can be just the

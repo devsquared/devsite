@@ -29,7 +29,7 @@ If you read the long version, props to you and feel free to reach out to me.
 
 ## My Blog's Mission Statement
 
-This blog acts as some kind of agile process (everybody's favorite thing) on my growth and learning in the world of software development along with
+This blog acts as some kind of iterative process on my growth and learning in the world of software development along with
 a place that I sporadically throw ideas into the ether/forever-saved-interwebs. These things have helped me at some point,
 so maybe they can help someone who reads them.
 
@@ -42,6 +42,7 @@ Reach out to me on any of my socials:
 
 - Email: [devin](mailto:devin@hey.com)
 - Mastodon: [devsquared](https://hachyderm.io/@devsquared)
+- Bluesky: [devsquared](https://bsky.app/profile/devsquared.bsky.social)
 - LinkedIn: [devinmward](https://www.linkedin.com/in/devinmward/)
 - Github: [devsquared](https://github.com/devsquared)
 
