@@ -43,8 +43,9 @@ opinionated. I love talking about this and enjoy somebody changing my mind. So l
 - Match to the code; not the business.
     - My pet peeve in unit tests is helpers that do full UUID generation for a unit test. That isn't needed. It can be `00000000-0000-0000-0000-000000000001`. 
     The field called `ShipProvider` does not need to be `FedEx`; it can just be `shipper`. Two main cases where this is not true: 
-    1. when testing code that validates a very niche business logic case - though this can potentially be a smell
-    2. the code you are testing is intended to do something like UUID generation
+    > 1. when testing code that validates a very niche business logic case - though this can potentially be a smell
+    > 2. the code you are testing is intended to do something like UUID generation
+
     - This enables an engineer to come in and ask what the code is actually doing. It removes the confusion that business logic can sometimes create. 
     When stepping through what the code is doing, I want to know what happens when a `string` or `int` goes through this code; not a `lastName` or a `price`.
 
@@ -123,12 +124,14 @@ func TestAdd(t *testing.T) {
     - This was a particular "gotcha" in a recent role where lots of tests around the DB were utilizing parallel causing way more 
     trouble than any worth.
 - AI writing tests
-    - Probably my most "controversial" take. In its current state, AI has no place to write your unit tests. Current state, AI and LLMs 
-    provide a statistical guess at what the code should look like. Tests need to be deterministic. Even as AI approaches
-    probable - as in the AI is right 99% of the time - solutions, I still value human input on the side of tests. Maybe there is a world
-    in which AI is writing a lot of code. In that world, I favor the workflow of the input actually being solid tests.
+    - Probably my most "controversial" take. In its current state, AI has no place to write your unit tests. AI and LLMs 
+    provide a statistical guess at what the code should look like piece by piece as it generates. Tests need to be deterministic.
+    Even as AI approaches probable - as in the AI is right 99% of the time - solutions, I still value human input on the side of tests. 
+    Maybe there is a world in which AI is writing a lot of code. In that world, I favor the workflow of the input actually being solid tests.
+
 
     The author should be the one writing unit tests to convey to any reader what the intent is. That is the purpose of tests.
+
 
     Unit tests should be a section of your code that you have the strongest understanding of. Further, it is often code that changes far 
     less than that of the code it tests. Understanding this key part of your project is important.
