@@ -1,9 +1,9 @@
 ---
 title: "Tips and Tricks for Testing in Go"
-date: 2025-02-17T20:07:55-06:00
+date: 2025-02-19T20:07:55-06:00
 tags: ["software", "engineering", "testing"]
 author: "Devin Ward"
-draft: false
+draft: true
 description: ""
 hideSummary: false
 ShowReadingTime: true
@@ -27,25 +27,23 @@ opinionated. I love talking about this and enjoy somebody changing my mind. So l
 
 ## Goal of Testing
 - What is testing?
-    - Testing is a broad term. Automated testing is a broad term. Unit testing is.....
-    - Know that we are talking about automated testing that lives alongside your test. Majority is considered unit testing. 
+    - Testing is a broad term. Automated testing is a broad term. Unit testing is a broad term.
+    - Know that we are talking about automated testing that lives alongside your code. Majority is considered unit testing. 
     We are not here to argue or talk about this.
 - Quality. Reliability. Understanding. Examples.
     - Unit testing is the single leading way to gather an understanding on what the actual code is doing. It is
-    the example to your code. It should tell the reader this is what this thing does and how that behavior looks. 
+    the example to your code. It should tell the reader what this code does and how that code behaves. 
 
 ## Readability - Match to Code; Not Business
 - Tests as a story. 
-    - We have all been there. Load up some go code. Look at some go file. And you wonder what in the hell any of this is doing? 
+    - We have all been there. Look at some code file. And you wonder what in the hell any of this is doing? 
     README is stinky and no-good. There is little to no documentation in the code. So how do we come to understand how this thing works? 
     For me, this has come to be unit tests. They - if written well - break the code up to small pieces (by design), provide different contexts for the 
     code/system being tested to work with (more on this shortly), and should tell me exactly what is happening. 
 - Match to the code; not the business.
     - My pet peeve in unit tests is helpers that do full UUID generation for a unit test. That isn't needed. It can be `00000000-0000-0000-0000-000000000001`. 
-    The field called `ShipProvider` does not need to be `FedEx`; it can just be `shipper`. Two main cases where this is not true: 
-    > 1. when testing code that validates a very niche business logic case - though this can potentially be a smell
-    > 2. the code you are testing is intended to do something like UUID generation
-
+    The field called `ShipProvider` does not need to be `FedEx`; it can just be `shipper`. There are cases where this needs to be
+    more specific but generally it need not be.
     - This enables an engineer to come in and ask what the code is actually doing. It removes the confusion that business logic can sometimes create. 
     When stepping through what the code is doing, I want to know what happens when a `string` or `int` goes through this code; not a `lastName` or a `price`.
 
