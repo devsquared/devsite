@@ -12,6 +12,9 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ---
 
+## TODO: 
+- For the presentation to be made, make sure to include lots of examples.
+
 ## Who this is for
 Any and all writers of Go code who have the basic understanding of how to test in go. I hope that anybody from the engineer
 who just finished their first test in go to the senior staff principal engineer who cannot even get close to counting the 
@@ -34,6 +37,7 @@ opinionated. I love talking about this and enjoy somebody changing my mind. So l
     - Unit testing is the single leading way to gather an understanding on what the actual code is doing. It is
     the example to your code. It should tell the reader what this code does and how that code behaves. 
 
+## TODO: change this to emphasize only putting enough information as needed
 ## Readability - Match to Code; Not Business
 - Tests as a story. 
     - We have all been there. Look at some code file. And you wonder what in the hell any of this is doing? 
