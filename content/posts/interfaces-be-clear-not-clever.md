@@ -26,6 +26,7 @@ ShowRssButtonInSectionTermList: true
 > out the interface immediately, go about coding the solution. If an interface is needed, you 
 > will find it in time.
 
+- brief intro on why interfaces are important - very brief
 - talk about the struggle for engineers of all levels to find and create good interfaces
 - talk about the go proverb: clear not clever
 - brings those together in a talk about when an interface is clear - 
